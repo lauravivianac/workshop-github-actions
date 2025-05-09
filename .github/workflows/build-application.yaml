@@ -41,6 +41,11 @@ jobs:
       - name: Workshop Initial Step
         run: |
           echo "Hello World!"
+      
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
   ## NOTE: This section is for the second part of the Demo
   # build-container:
